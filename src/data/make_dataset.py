@@ -1,3 +1,6 @@
+import tensorflow
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
+
 def train_val_generators(DATA_DIR, SPLIT_SIZE, NUM_BATCHES):
     """
 
@@ -25,5 +28,3 @@ def train_val_generators(DATA_DIR, SPLIT_SIZE, NUM_BATCHES):
 
     return train_generator, validation_generator
 
-def print_something():
-    return "test"
